@@ -10,8 +10,8 @@
         <a class="logo" href="index.html"><img src="logo.svg" alt="Логотип магазина "Техномарт"">
  	    </a>	  
  	    <form action="" method="get">
- 	      <label>Поиск<input type="text" name="search">
- 		  </label>
+ 	      <input id="top-search" type="search" name="search" value="Поиск:">
+		  <label for="top-search" class="visually-hidden">Поиск</label> <!-- ФД -->
  		</form>
  	    <a href="#">Закладки:</a>
  	    <a href="#">Корзина:</a>
@@ -25,8 +25,10 @@
  	      <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
  	    </ul>
  	    <ul class="user">
- 	      <li class="name-user"><span>Равшан Джамшутович</span></li>
-  		  <li class="user-link"><a href="#">Мои заказы</a></li>
+		  <li class="name-icon"><a href="#"><img src="user-icon.svg" alt="ссылка на профайл"></a></li> <!-- по ТЗ Это ссылка на профайл - верно сделала? -->
+ 	      <li class="name-user"><a href="#">Равшан Джамшутович</a></li> <!-- по ТЗ Это ссылка на профайл - верно сделала? -->
+  		  <li class="exit-icon"><a href="#"><img src="exit-icon.svg" alt="ссылка на на страницу деавторизации"></a></li> <!-- по ТЗ Это ссылка на страницу деавторизации - верно сделала? -->
+		  <li class="user-link"><a href="#">Мои заказы</a></li>
   		  <li class="user-link"><a href="#">Личный кабинет</a></li>
         </ul>
  	    <nav class="main-navigation">
@@ -52,57 +54,124 @@
       <h2 class="title">Перфораторы</h2>	
    
  	  <section class="filters">
- 	    <h2 class="visually-hidden">Фильтр товаров</h2>
- 		<!-- в блоке "filters" будут лежать ссылки -->
- 	  </section>
+ 	    <h3 class="filters-title">Фильтр:</h3><!-- ФД: обработала блок "filters" -->
+ 		<form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
+		  <fieldset>
+		    <legend>Цена:</legend>
+			<div class="filter-price"> <!-- здесь сам фильтр с ползунком -->
+			  <label for="pricecount" class="visually-hidden filter-input filter-input-price" >Цена по фильтру</label>
+			  0 <input type="range" min="0" max="40000" step="500" id="pricecount"> 40000
+			</div>
+			<div class="filter-price output-area"> <!-- здесь и в шапке формы заложен вывод стоимости по фильтру -->
+			  <ul>
+			    <li><span>0</span>
+				</li>
+				<li><span>-</span>
+				</li>
+			    <li><output name="priceoutput">30000</output>
+				</li>
+			  </ul>
+			</div>
+		  </fieldset>
+		  <fieldset>
+		    <legend>Производители:</legend>
+		    <ul>
+			  <li class="filter-option"> <!-- ФД: class="visually-hidden" добавим заранее - При стилизации нестандартных полей ввода все поля придется прятать -->
+			    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
+				<label for="filter-BOSCH">BOSCH</label>
+			  </li>
+			  <li class="filter-option">
+			    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
+			    <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+			  </li>
+			  <li class="filter-option">
+			    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
+			    <label for="filter-MAKITA">MAKITA</label>
+			  </li>
+			  <li class="filter-option">
+			    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="DEWALT" id="filter-DEWALT">
+			    <label for="DEWALT">DEWALT</label>
+			  </li>
+			  <li class="filter-option">
+			    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="HITACHI" id="filter-HITACHI">
+			    <label for="HITACHI">HITACHI</label>
+			  </li>
+			</ul>
+		  </fieldset>
+		  <fieldset>
+		    <legend>Питание</legend>
+			<ul>
+			  <li class="filter-option">
+			    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-group" value="battery-power" id="filter-battery" checked>
+				<label for="filter-battery">Аккумуляторные</label>
+			  </li>
+			  <li class="filter-option">
+			    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-group" value="mains-supply" id="filter-supply">
+				<label for="filter-mains">Сетевые</label>
+			  </li>
+			</ul>
+		  </fieldset>
+		  <button type="submit" class="filter-button button">Показать</button>
+		</form>
+ 	  </section> 
+	      
  	  <section class="sort">
- 	    <h2 class="visually-hidden">Сортировка</h2>
- 		<!-- В Сортировке еще будет блок c ccылками. Далее изменила section на div class="instruments".  -->
- 	    <div class="instruments">
+ 	    <h3 class="sort-title">Сортировка</h3>
+ 		<!-- ФП: В Сортировке в Карточках изменила расположение ссылок - обернула фото и название в одну ссылку -->
+		<!-- ФП: Будет позже: фильтры в общей секции "Сортировка" по цене,типу, функц-лу -->
+ 	    <form>
+		<div class="instruments">
  	      <h2 class="visually-hidden">Инструменты</h2>
  		  <ul class="cards-wrapper">
  		    <li class="card">
- 		      <img src="img/BFG3000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"> 
- 			  <h3><a href="card-category.html">Перфоратор BOSCH BFG 3000</a>
- 			  </h3>
+			  <a href="card-category.html"> 
+ 		        <img src="img/BFG3000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"> 
+ 			    <h3>Перфоратор BOSCH BFG 3000</h3>
+			  </a>
  			  <p class="card-old-price">22 500 Р</p>
  			  <p class="card-price">15 500 Р</p>
  		    </li>
  		    <li class="card">
- 		      <img src="img/BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000">
- 			  <h3><a href="card-category.html">Перфоратор BOSCH BFG 6000</a>
- 			  </h3>
- 			  <p class="card-old-price">30 500 Р</p>
+			  <a href="card-category.html">
+ 		        <img src="img/BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000">
+ 			    <h3>Перфоратор BOSCH BFG 6000</h3>
+ 			  </a>
+			  <p class="card-old-price">30 500 Р</p>
               <p class="card-price">25 500 Р</p>
  		    </li>
  		    <li class="card">
- 		      <img src="img/BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"> 
- 			  <h3><a href="card-category.html">Перфоратор BOSCH BFG 2000</a>
- 			  </h3>
+ 		      <a href="card-category.html">
+			    <img src="img/BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"> 
+ 			    <h3>Перфоратор BOSCH BFG 2000</h3>
+			  </a>
  			  <p class="card-price">12 500 Р</p>
  		    </li>
  		    <li class="card">
- 		      <img src="img/BFG3000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"> 
- 			  <h3><a href="card-category.html">Перфоратор BOSCH BFG 3000</a>
- 			  </h3>
+ 		      <a href="card-category.html">
+			    <img src="img/BFG3000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000"> 
+ 			    <h3>Перфоратор BOSCH BFG 3000</h3>
+			  </a>
  			  <p class="card-old-price">22 500 Р</p>
  			  <p class="card-price">15 500 Р</p>
  		    </li>
  		    <li class="card">
- 		      <img src="img/BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000">
- 			  <h3><a href="card-category.html">Перфоратор BOSCH BFG 6000</a>
- 			  </h3>
+			  <a href="card-category.html">
+ 		        <img src="img/BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000">
+ 			    <h3>Перфоратор BOSCH BFG 6000</h3>
+			  <a>
  			  <p class="card-old-price">30 500 Р</p>
               <p class="card-price">25 500 Р</p>
  		    </li>
  		    <li class="card">
- 		      <img src="img/BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"> 
- 			  <h3><a href="card-category.html">Перфоратор BOSCH BFG 2000</a>
- 			  </h3>
+ 		      <a href="card-category.html">
+			  <img src="img/BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"> 
+ 			  <h3>Перфоратор BOSCH BFG 2000</h3>
+			  </a>
  			  <p class="catalog-price">12 500 Р</p>
  		    </li>
  		  </ul>		  
-        </div>		
+        </div>
+		</form>
 	  </section>
  		
  	  <section class="about">
@@ -156,5 +225,38 @@
  	    </p>
        </div>
  	</footer>
+	
+	<!-- ФД: новое: добавила модальное окно для Личного кабинета и в Карточке товара -->
+    <section class="modal modal-login">
+	  <h2>Личный кабинет</h2>
+	  <p>Введите свой логин и парооль.</p>
+	  <form class="login-form" action="https"//echo.htmlacademy.ru" method="post">
+        <p>
+		  <label class="visually-hidden" for="user-login">Логин</label>
+		  <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+		</p>
+		<p>
+		  <label class="visually-hidden" for="user-password">Пароль</label>
+		  <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+		</p>
+		<p><a class="restore" href="#">Я забыл пароль!</a>
+		</p>
+		<button class="button" type="submit">Войти</button>
+	  </form>
+	  <button class="modal-close" type="button">Закрыть</button>
+	</section>
+	
+	<section class="modal modal-card">
+	  <h2 class="visually-hidden">Купить или закладки</h2>
+	  <form class="buy-now-or-later-form" action="https"//echo.htmlacademy.ru" method="get">
+	    <ul>
+	      <li><button class="button" type="submit">Купить</button>
+		  </li>
+		  <li><button class="button" type="submit">В закладки</button>
+		  </li>
+	    </ul>
+	  </form> 
+	</section>
+	
   </body>
 </html>
