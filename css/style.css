@@ -1,0 +1,909 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: none;
+
+  background-color: #293449;
+  }
+
+a {
+  text-decoration: none;
+  }
+
+.header {
+    background-color: #f4f8fa;
+}
+
+.top-header {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.top-header .logo {
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.top-header .logo:hover,
+.top-header .logo:focus {
+  background-color: #ca2c37;
+}
+
+.top-header .logo:active {
+  background-color: #ba2732;
+} /*ЗДЕСЬ ЕЩЕ ПРОЗРАЧНОСТЬ 30%. как ее отразить?*/
+
+.top-header input {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.top-header input:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.add-form,
+.add-form:focus,
+.bascket,
+.basket:focus {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.add-form:hover,
+.bascket:hover {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.add-form:active,
+.bascket:active {
+  color: #ffffff;
+  background-color: #161d29;
+}
+
+.order,
+.order:focus {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.order:hover {
+  color: #ffffff;
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  color: #ffffff;
+  background-color: #518534;
+}
+.main-header {
+  background-color: #f4f8fa;
+}
+
+.common-information,
+.entrance-registration,
+.user,
+.site-navigation,
+.breadcrumbs {
+  list-style: none;
+}
+
+.main-header .about-shop {
+  font-family: "Cuprum italic", "Arial italic", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.common-information {
+  width: 270px;
+  height: 45px;
+  text-align: center;
+}
+
+ul .telephone {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 17px;
+  color: #ee3643;
+  border: 2px solid #feffff;
+}
+
+ul .address {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  }
+
+.login-link a,
+.registration a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.login-link a:hover,
+.login-link a:focus,
+.registration a:hover,
+.registration a:focus {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 18px;
+  color: #ee3643;
+
+  background-color: #ffffff;
+}
+
+.login-link a:active,
+.registration a:active {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 18px;
+  color: #000000;
+/*здесь еще есть прозрачность - нужен серый цвет шрифта при клике!!!*/
+  background-color: #ffffff;
+}
+
+.name-icon,
+.name-user,
+.exit-icon {
+  background-color: #ffffff;
+}
+
+.name-user a,
+.name-user a:hover,
+.name-user a:focus {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: auto;
+  color: #000000;
+/*здесь еще есть прозрачность - нужен серый цвет шрифта при клике!!!*/
+  background-color: #ffffff;
+}
+
+.name-user a:active {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: auto;
+  color: #000000;
+/*здесь еще есть прозрачность 30% - нужен серый цвет шрифта при клике!!!*/
+  background-color: #ffffff;
+}
+
+.user-link a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-link a:hover,
+.user-link a:active {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  color: #ee3643;
+  text-decoration: underline;
+}
+
+.user-link a:active {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  color: #32425c;
+  text-decoration: underline; /*здесь еще есть прозрачность 30% - нужен серый цвет шрифта при клике!!!*/
+}
+
+.main-navigation {
+    background-color: #32425c;
+  /*здесь в ФШ какая-то внутренняя тень и иной цвет-color overlay - эффект есть*/
+}
+
+.main-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  /*здесь в ФШ какая-то внутренняя тень и иной цвет-color overlay - эффект есть*/
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.main-navigation a:active {
+  color: #ffffff;
+  background-color: #1d2739;
+}/*здесь еще есть прозрачность 50%!!!!!!!!!!!*/
+
+.container {
+  background-color: #ffffff;
+}
+
+.catalog-list,
+.slides-switches,
+.cards-wrapper,
+.producers,
+.services-slide-toggles,
+.services-slides,
+.special-transport,
+.filter-show,
+.filter-sort-points,
+.footer-menu,
+.footer-social {
+  list-style: none;
+}
+
+.catalog-list li:first-child {
+  background-color: #ffbf47;
+}
+
+.catalog-list li:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.catalog-list li:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.catalog-list li:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.catalog-list li:nth-child(5) {
+  background-color: #ffc047;
+}
+
+.catalog-item h3 {
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.catalog-item a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase; /*УТОЧНИ ПАРАМЕТРЫ ТЕКСТА и ЗАДАТЬ на КАРТОЧКи-разделы прозрачно-черный фон */
+
+  background-color: #000000;
+}
+
+.main-slider h3 {
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.main-slider p {
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.main-slider a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.main-slider a:hover,
+.main-slider a:focus {
+  background-color: #ca2c37;
+}
+
+.main-slider a:active {
+  background-color: #ba2732;
+}
+
+.main-slide-first {
+  background-color: #9d9792;
+  background-image: url("img/slide-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-slide-second {
+  background-color: #9d9792;
+  background-image: url("img/slide-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-slider-button {
+  background-color: transparent;
+  border: none;
+}
+
+.slides-switches .slide-btn {
+  background-color: #ffffff;
+  } /*здесь уточнить отображение:цвет декоративных радиокнопок*/
+
+.popular-goods .section-headline,
+.popular-producers .section-headline {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f9f5f0;
+}
+/*сделала доп обертку, чтобы можно было бежевую полосу задать: */
+.popular-goods-wrapper,
+.popular-producers-wrapper {
+  background-color: #f9f5f0;
+}
+
+.popular-goods-wrapper a,
+.popular-producers-wrapper a,
+.company-contacts a  {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+ background-color: #ee3643;
+}
+
+.card h3 {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.card-old-price {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.card-price {
+  width: 141px;
+  height: 38px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.services-delivery {
+  background-color: #f4f8fa;
+}
+
+.services-delivery .section-headline,
+.company-contacts .section-headline {
+    /*ПАРАМЕТРЫ ТЕКСТА на глаз, т.к. в ФШ это один слой без параметров текста!!!!!*/
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  }
+
+.services-delivery p,
+.company-contacts p {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.services-slide-toggles {
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: auto;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.services-slide-toggles:hover {
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: auto;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.services-slide-toggles:active,
+.services-slide-toggles:focus {
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: auto;
+  font-weight: bold;
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.services-slides a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.special-transport li::before {
+  content: "- ";
+  color: #ee3643;
+}
+
+.company-name {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.contacts .small-map {
+  background-color: transparent; /*почему здесь на карте появляется красная полоса у фона?*/
+}
+
+.contacts .buttons {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.breadcrumbs a,
+.breadcrumbs li:last-child,
+.filters .filters-title,
+.sort .sort-title { /*ЗДЕСЬ НАЧИНАЕТСЯ РАЗМЕТКА СТРАНИЦЫ КАТАЛОГА*/
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.container .title {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.filters .filters-title,
+.sort .sort-title {
+  background-color: #f7f3ec;
+}
+
+.filters fieldset {
+  border: none;
+  border-bottom: 1px solid #f7f3ec;
+}
+
+.filters fieldset:nth-child(3) {
+  border-bottom: none;
+}
+
+.filters legend {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter-price {
+  background-color: #f7f3ec;
+}
+
+.output-area {
+    background-color: #ffffff;
+}
+
+.filter-show li:first-child,
+.filter-show li:nth-child(3) {
+  background-color: #f7f3ec;
+}
+
+.filter-show {
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+
+fieldset .filter-producers,
+fieldset .filter-inner {
+  list-style: none;
+  }
+
+fieldset .filter-option {
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters button {
+  width: 140px;
+  height: 38px;
+
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid #f7f3ec;
+}
+
+.sort .filter-sort-points a {
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000; /*ЗДЕСЬ ЕСТЬ ПРОЗРАЧНОСТЬ 30% - как задать?*/
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dashed #ee3643;
+}
+
+.filter-sort-points a:hover,
+.filter-sort-points a:focus {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #ee3643;
+}
+
+.filter-sort-points a:active {
+  color: #ee3643;
+  border-bottom: none;
+  }
+
+.buy-now-or-later li:first-child button {
+  width: 135px;
+  height: 38px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: auto; /*ИЛИ ЗДЕСЬ СДЕЛАТЬ КАК В КАТАЛОГЕ 18px&&&*/
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+
+  background-color: #63a63e;
+}
+
+.buy-now-or-later li:first-child button:hover,
+.buy-now-or-later li:first-child button:focus {
+  background-color: #5fbb2d;
+}
+
+.buy-now-or-later li:first-child button:active {
+  background-color: #518534;
+}
+
+.buy-now-or-later li:last-child button {
+  width: 135px;
+  height: 38px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: auto; /*ИЛИ ЗДЕСЬ СДЕЛАТЬ КАК В КАТАЛОГЕ 18px&&&*/
+  color: #32425c;
+  text-transform: uppercase;
+  border: 3px solid #518534;
+
+  background-color: #ffffff;
+  }
+
+.buy-now-or-later li:last-child button:hover,
+.buy-now-or-later li:last-child button:focus {
+  border: 3px solid #32425c;
+}
+
+.buy-now-or-later li:first-child button:active {
+  border: 2px solid #32425c; /*ЗДЕСЬ ЕЩЕ ПРОЗРАЧНОСТЬ 30% - как сделать?*/
+}
+
+.about {
+  background-color: #f4f8fa;
+}
+
+.about .about-title {
+/*ПАРАМЕТРЫ ТЕКСТА на глаз, т.к. в ФШ это один слой без параметров текста!!!!!*/
+font-family: "Cuprum Regular", "Arial", sans-serif;
+font-size: 30px;
+line-height: 30px;
+color: #000000;
+text-transform: uppercase;
+}
+
+.about p {
+font-family: "Cuprum Regular", "Arial", sans-serif;
+font-size: 14px;
+line-height: 22px;
+color: #000000;
+}
+
+.pagination-list a {
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: auto;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-list .pagination-item-current a { /*ьак делают или иначе текущую страницу?*/
+  background-color: #ee3643;
+}
+.pagination-list a:hover,
+.pagination-list a:focus {
+  text-decoration: none;
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active {
+  border: 1px solid #ee3643;
+  }
+
+.main-footer {
+  background-color: #32425c;
+}
+
+.main-footer .logo {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ec2c19; /*здесь какое-то наложение 2-х цветов и тень. как добавить? - два фона разных цветов сделать + фон???*/;
+}
+
+.main-footer .logo:hover,
+.main-footer .logo:focus {
+  background-color: #ca2c37;
+}
+
+.main-footer .logo:active {
+  background-color: #ba2732;
+} /*ЗДЕСЬ ЕЩЕ ПРОЗРАЧНОСТЬ 30%. как ее отразить?*/
+
+.footer-contacts {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #f3f7f9;
+
+  background-color: #32425c;
+}
+
+.footer-menu a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #f3f7f9;
+
+  background-color: #32425c;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #f1f5f7;
+  text-decoration: none;
+  border-bottom: 2px solid #f1f5f7;
+
+  background-color: #32425c;
+}
+
+.footer-menu a:active {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #f1f5f7;
+
+  background-color: #32425c;
+} /*здесь еще прозрачность 50% - как задать? srgb?*/
+
+.footer-menu-bottom a {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffd180;
+
+  background-color: #32425c;
+}
+
+.footer-menu-bottom a:hover,
+.footer-menu-bottom a:focus {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffd180;
+  text-decoration: none;
+  border-bottom: 2px solid #ffd180;
+
+  background-color: #32425c;
+}
+
+.footer-menu .footer-menu-bottom a:active {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffd180;
+
+  background-color: #32425c; /*ЗДЕСЬ ПРОЗРАЧНОСТЬ НУЖНА 50%!!!*/
+}
+
+.bottom-footer {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.bottom-footer a {
+    color: #ffd180;
+}
+
+.feedback a:hover,
+.feedback a:focus,
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    color: #ffd180;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd180;
+}
+
+.feedback a:active,
+.footer-copyright a:active {
+    color: #ee3643;
+    border-bottom: none;
+}
+
+.modal-write-us,
+.modal-bracket {
+  background-color: #ffffff;
+}
+
+.modal-close {
+  color:  #ee3643;
+  background: transparent;
+  block: none;
+}
+
+.write-us-form p {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+  }
+
+.write-us-form input,
+.write-us-form textarea {
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #a9a9a9;
+}
+
+.write-us-wrapper,
+.modal-bracket p:last-child {
+  background-color: #f4f4f4;
+}
+
+.write-us-form button {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.modal-bracket p {
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.modal-bracket .go-to:first-child {
+  width: 220px;
+  height: 38px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.modal-bracket .go-to:last-child {
+  width: 220px;
+  height: 38px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}

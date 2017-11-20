@@ -3,24 +3,27 @@
   <head>
     <meta charset="utf-8">
  	<title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
        <div class="top-header">
-         <a class="logo" href="index.html"><span class="visually-hidden">Логотип магазина</span>Техномарт
+         <a class="logo" href="index.html">Техномарт
          </a>
          <form action="" method="get">
            <input id="top-search" type="search" name="search" value="Поиск:">
            <label for="top-search" class="visually-hidden">Поиск</label>
          </form>
-         <a href="#">Закладки:</a>
-         <a href="#">Корзина:</a>
-         <a href="#">Оформить заказ</a>
+         <a href="#" class="add-form">Закладки:</a>
+         <a href="#" class="bascket">Корзина:</a>
+         <a href="#" class="order">Оформить заказ</a>
        </div>
        <div class="main-header">
          <p class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта
          </p>
-         <ul class"common-information">
+         <ul class="common-information">
            <li class="telephone">+7 (812) 555-05-55</li>
            <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
          </ul>
@@ -63,10 +66,10 @@
                0 <input type="range" min="0" max="40000" step="500" id="pricecount"> 40000
              </div>
              <div class="filter-price output-area">
-               <ul>
+               <ul class="filter-show">
                  <li><span>0</span>
                  </li>
-                 <li><span>-</span>
+                 <li><span> - </span>
                  </li>
                  <li><output name="priceoutput">30000</output>
                  </li>
@@ -75,7 +78,7 @@
            </fieldset>
            <fieldset>
              <legend>Производители:</legend>
-             <ul>
+             <ul class="filter-producers">
                <li class="filter-option">
                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
                  <label for="filter-BOSCH">BOSCH</label>
@@ -100,7 +103,7 @@
            </fieldset>
            <fieldset>
              <legend>Питание</legend>
-             <ul>
+             <ul class="filter-inner">
                <li class="filter-option">
                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-group" value="battery-power" id="filter-battery" checked>
                  <label for="filter-battery">Аккумуляторные</label>
@@ -117,7 +120,7 @@
 
        <section class="sort">
          <h3 class="sort-title">Сортировка</h3>
- 		 <ul class="filter-sort-points">
+ 		     <ul class="filter-sort-points">
            <li class="sort-point"><a href="#">по цене</a>
            </li>
            <li class="sort-point"><a href="#">по типу</a>
@@ -209,13 +212,19 @@
 		         </li>
 	           </ul>
                <a href="card-category.html">
-                 <img src="img/BOSCH-BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000"> 
+                 <img src="img/BOSCH-BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000">
                  <h3>Перфоратор BOSCH BFG 2000</h3>
                </a>
-               <p class="catalog-price">12 500 Р</p>
+               <p class="card-price">12 500 Р</p>
              </li>
            </ul>
          </div>
+         <ul class="pagination-list">
+           <li class="pagination-item pagination-item-current"><a>1</a></li>
+           <li class="pagination-item"><a href="">2</a></li>
+           <li class="pagination-item"><a href="">3</a></li>
+           <li class="pagination-item"><a href="">Следующая</a></li>
+        </ul>
        </section>
        <section class="about">
 		 <h2 class="about-title">Пара слов о перфораторах</h2>
@@ -226,8 +235,7 @@
      </main>
 
      <footer class="main-footer">
-       <a class="logo" href="index.html">
- 	     <span class="visually-hidden">Логотип магазина</span>Техномарт
+       <a class="logo" href="index.html">Техномарт
        </a>
        <p class="footer-contacts">
 	     г.Санкт-Петербург, Б.Конюшенная, д.19/8
@@ -254,28 +262,28 @@
  	       Все права защищены
  	     </p>
  	     <ul class="footer-social">
- 		   <li><a class="social-button" href="#">Вконтакте</a></li>
- 		   <li><a class="social-button" href="#">Фейсбук</a></li>
- 		   <li><a class="social-button" href="#">Инстаграм</a></li>
- 		 </ul>
- 	 	 <p class="feedback">
+ 		     <li><a class="social-button" href="#">Вконтакте</a></li>
+ 		     <li><a class="social-button" href="#">Фейсбук</a></li>
+ 		     <li><a class="social-button" href="#">Инстаграм</a></li>
+ 		  </ul>
+ 	 	  <p class="feedback">
  	       Обратная связь:
- 		   <a href="mailto:mail@htmlacademy.ru">HTML Academy</a>
+ 		    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
  	     </p>
  	     <p class="footer-copyright">
  	       Разработано:
- 		   <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+ 		     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
  	     </p>
-       </div>
+     </div>
  	 </footer>
 
      <section class="modal modal-bracket">
-	   <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+	     <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-	   <p>Товар добавлен в корзину!</p>
+	     <p>Товар добавлен в корзину!</p>
        <p>
-	   <a class="go-to" href="#">Оформить заказ</a>
-       <a class="go-to" href="catalog.html">Продолжить покупки</a>
+	       <a class="go-to" href="#">Оформить заказ</a>
+         <a class="go-to" href="catalog.html">Продолжить покупки</a>
        </p>
      </section>
    </body>

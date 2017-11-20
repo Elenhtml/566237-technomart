@@ -3,19 +3,22 @@
     <head>
       <meta charset="utf-8">
       <title>Техномарт</title>
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize.css rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
     <header class="header">
       <div class="top-header">
-        <a class="logo" href="index.html"><span class="visually-hidden">Логотип магазина</span>Техномарт
+        <a class="logo" href="index.html">Техномарт
         </a>
         <form action="" method="get">
           <input id="top-search" type="search" name="search" value="Поиск:">
           <label for="top-search" class="visually-hidden">Поиск</label>
         </form>
-        <a href="#">Закладки:</a>
-        <a href="#">Корзина:</a>
-        <a href="#">Оформить заказ</a>
+        <a href="#" class="add-form">Закладки:</a>
+        <a href="#" class="bascket">Корзина:</a>
+        <a href="#" class="order">Оформить заказ</a>
       </div>
       <div class="main-header">
         <p class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта
@@ -24,7 +27,7 @@
           <li class="telephone">+7 (812) 555-05-55</li>
           <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
         </ul>
-        <ul>
+        <ul class="entrance-registration">
           <li class="login-link"><a href="#">Войти</a></li>
           <li class="registration"><a href="#">Регистрация</a></li>
         </ul>
@@ -68,12 +71,12 @@
           </li>
         </ul>
  	      <div class="main-slider">
-          <div class="main-slide">
+          <div class="main-slide-first">
 		        <h3 class="catalog-item-title">Перфораторы</h3>
-            <p class="catalog-item-subtitle">настоящие мужские игрушки</p>
+            <p class="catalog-item-subtitle">Настоящие мужские игрушки</p>
             <a class="button" href="catalog.html">Открыть каталог</a>
           </div>
-          <div class="main-slide">
+          <div class="main-slide-second">
             <h3 class="catalog-item-title">Дрели</h3>
             <p class="catalog-item-subtitle">Соседям на радость!</p>
             <a class="button" href="catalog.html">Открыть каталог</a>
@@ -94,12 +97,14 @@
       </section>
 
 	  <section class="popular-goods">
+      <div class="popular-goods-wrapper">
 	    <h2 class="section-headline">Популярные товары:</h2>
           <a class="button" href="#">Все популярные товары</a>
+      </div>
         <ul class="cards-wrapper">
           <li class="card">
             <a href="card-category.html">
-              <img src="img/BOSCH-BFG9000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/BOSCH-BFG9000.jpg" width="220" height="140" alt="Перфоратор BOSCH BFG 9000">
               <h3>Перфоратор BOSCH BFG 9000</h3>
             </a>
             <p class="card-old-price">32 500 Р</p>
@@ -107,7 +112,7 @@
           </li>
           <li class="card">
             <a href="card-category.html">
-              <img src="img/BOSCH-BFG3000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/BOSCH-BFG3000.jpg" width="220" height="140" alt="Перфоратор BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
             </a>
             <p class="card-old-price">22 500 Р</p>
@@ -115,7 +120,7 @@
           </li>
           <li class="card">
             <a href="card-category.html">
-              <img src="img/BOSCH-BFG6000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/BOSCH-BFG6000.jpg" width="220" height="140" alt="Перфоратор BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
             </a>
             <p class="card-old-price">30 500 Р</p>
@@ -123,7 +128,7 @@
           </li>
           <li class="card">
             <a href="card-category.html">
-              <img src="img/BOSCH-BFG2000.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/BOSCH-BFG2000.jpg" width="220" height="140" alt="Перфоратор BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
             </a>
             <p class="card-price">12 500 Р</p>
@@ -132,43 +137,45 @@
       </section>
 
 	  <section class="popular-producers">
+      <div class="popular-producers-wrapper">
         <h2 class="section-headline">Популярные производители:</h2>
         <a class="button" href="#">Все производители</a>
-        <ul class="producers">
-          <li class="producer">
-            <a href="#"><img src="img/logo-BOSCH.png" width="220" height="80" alt="Bosch">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-Makita.png" width="220" height="80" alt="Makita">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-DeWalt.png" width="220" height="80" alt="DeWalt">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-Interscol.png" width="220" height="80" alt="Интерскол">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-Hitachi.png" width="220" height="80" alt="Hitachi">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-LG.png" width="220" height="80" alt="LG">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-AEG.png" width="220" height="80" alt="AEG">
-            </a>
-          </li>
-          <li class="producer">
-            <a href="#"><img src="img/logo-metabo.png" width="220" height="80" alt="Metabo">
-            </a>
-          </li>
-        </ul>
-      </section>
+      </div>
+      <ul class="producers">
+        <li class="producer">
+          <a href="#"><img src="img/logo-BOSCH.png" width="220" height="80" alt="Bosch">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-Makita.png" width="220" height="80" alt="Makita">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-DeWalt.png" width="220" height="80" alt="DeWalt">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-Interscol.png" width="220" height="80" alt="Интерскол">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-Hitachi.png" width="220" height="80" alt="Hitachi">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-LG.png" width="220" height="80" alt="LG">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-AEG.png" width="220" height="80" alt="AEG">
+          </a>
+        </li>
+        <li class="producer">
+          <a href="#"><img src="img/logo-metabo.png" width="220" height="80" alt="Metabo">
+          </a>
+        </li>
+      </ul>
+    </section>
 
 	  <section class="services-delivery">
         <h2 class="section-headline">Сервисы</h2>
@@ -217,18 +224,16 @@
           <a class="button" href="#">Подробнее о компании</a>
         </div>
         <div class="contacts">
-          <h2 class="section-headline">Компания "Техномарт"</h2>
+          <h2 class="section-headline">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:<p>
-          <a href="#"><img src="img/map-small.png" alt="Карта"></a>
+          <a class="small-map" href="#"><img src="img/map-small.png" alt="Карта"></a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
 
 	<footer class="main-footer">
-      <a class="logo" href="#">
-      <span class="visually-hidden">Логотип магазина</span>Техномарт
-      </a>
+      <a class="logo" href="#">Техномарт</a>
       <p class="footer-contacts">
         г.Санкт-Петербург, Б.Конюшенная, д.19/8
         +7 (812) 555-05-55
@@ -260,7 +265,7 @@
         </ul>
         <p class="feedback">
           Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">HTML Academy</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-copyright">
           Разработано:
@@ -283,7 +288,9 @@
           <label for="user-letter">Текст письма</label>
           <textarea class="letter" id="user-letter" type="text" name="letter" rows="5">В свободной форме</textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <div class="write-us-wrapper"> /*добавила новую обертку, чтобы создать фон нужный*/
+          <button class="button" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
 
