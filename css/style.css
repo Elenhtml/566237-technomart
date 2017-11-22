@@ -7,8 +7,7 @@ body {
   line-height: 17px;
   font-weight: 400;
   color: #ffffff;
-  text-transform: none;
-
+  
   background-color: #293449;
   }
 
@@ -43,10 +42,11 @@ a {
 }
 
 .top-header .logo:active {
-  background-color: #ba2732;
-} /*ЗДЕСЬ ЕЩЕ ПРОЗРАЧНОСТЬ 30%. как ее отразить?*/
+  background-color: rgba(186, 39, 50, 0.3);
+} 
 
 .top-header input {
+  font: inherit;
   color: #ffffff;
   background-color: #293449;
 }
@@ -56,22 +56,17 @@ a {
   background-color: #ffffff;
 }
 
-.add-form,
-.add-form:focus,
-.bascket,
-.basket:focus {
+.add-form {
   color: #ffffff;
   background-color: #293449;
 }
 
-.add-form:hover,
-.bascket:hover {
+.add-form:hover {
   color: #ffffff;
   background-color: #212a3a;
 }
 
-.add-form:active,
-.bascket:active {
+.add-form:active {
   color: #ffffff;
   background-color: #161d29;
 }
@@ -98,13 +93,12 @@ a {
 .common-information,
 .entrance-registration,
 .user,
-.site-navigation,
-.breadcrumbs {
+.site-navigation {
   list-style: none;
 }
 
 .main-header .about-shop {
-  font-family: "Cuprum italic", "Arial italic", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -117,102 +111,107 @@ a {
   text-align: center;
 }
 
-ul .telephone {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.telephone {
+  padding: 12px;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 17px;
+  line-height: 21px; /**/
+  font-weight: normal;
   color: #ee3643;
   border: 2px solid #feffff;
 }
 
-ul .address {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.address {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
+  font-weight: normal;
   color: #32425c;
   }
 
-.login-link a,
+.login-link a, /*нужны комментарии*/
 .registration a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px; /**/
+  font-weight: normal;
   color: #000000;
 
   background-color: #ffffff;
 }
 
-.login-link a:hover,
+.login-link a:hover,/*нужны комментарии*/
 .login-link a:focus,
 .registration a:hover,
 .registration a:focus {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px; /**/
+  font-weight: normal;
   color: #ee3643;
 
   background-color: #ffffff;
 }
 
-.login-link a:active,
-.registration a:active {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.entrance-registration a:active {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 18px;
-  color: #000000;
-/*здесь еще есть прозрачность - нужен серый цвет шрифта при клике!!!*/
+  line-height: 21px; /**/
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+/*здесь еще есть прозрачность - нужен серый цвет шрифта при клике!!! каков %?*/
   background-color: #ffffff;
 }
 
-.name-icon,
-.name-user,
-.exit-icon {
+.icon, 
+.name-user {
   background-color: #ffffff;
 }
 
 .name-user a,
 .name-user a:hover,
 .name-user a:focus {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: auto;
+  font-weight: normal;
   color: #000000;
-/*здесь еще есть прозрачность - нужен серый цвет шрифта при клике!!!*/
-  background-color: #ffffff;
-}
+  }
 
 .name-user a:active {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: auto;
-  color: #000000;
-/*здесь еще есть прозрачность 30% - нужен серый цвет шрифта при клике!!!*/
-  background-color: #ffffff;
-}
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  }
 
-.user-link a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.user-link a { /*link пока оставила до устных комментариев*/
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: auto;
+  font-weight: normal;
   color: #32425c;
   text-decoration: underline;
 }
 
 .user-link a:hover,
-.user-link a:active {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.user-link a:focus {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: auto;
+  font-weight: normal;
   color: #ee3643;
   text-decoration: underline;
 }
 
 .user-link a:active {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: auto;
-  color: #32425c;
-  text-decoration: underline; /*здесь еще есть прозрачность 30% - нужен серый цвет шрифта при клике!!!*/
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline; 
 }
 
 .main-navigation {
@@ -237,8 +236,8 @@ ul .address {
 
 .main-navigation a:active {
   color: #ffffff;
-  background-color: #1d2739;
-}/*здесь еще есть прозрачность 50%!!!!!!!!!!!*/
+  background-color: rgba(29, 39, 57, 0.5);;
+}
 
 .container {
   background-color: #ffffff;
@@ -252,34 +251,28 @@ ul .address {
 .services-slides,
 .special-transport,
 .filter-show,
-.filter-sort-points,
-.footer-menu,
-.footer-social {
+.filter-sort-points {
   list-style: none;
 }
 
-.catalog-list li:first-child {
+.catalog-item-orange {
   background-color: #ffbf47;
 }
 
-.catalog-list li:nth-child(2) {
+.catalog-item-blue {
   background-color: #3bbce3;
 }
 
-.catalog-list li:nth-child(3) {
+.catalog-item-fucsia {
   background-color: #dc91d8;
 }
 
-.catalog-list li:nth-child(4) {
+.catalog-item-green {
   background-color: #8ed78f;
 }
 
-.catalog-list li:nth-child(5) {
-  background-color: #ffc047;
-}
-
 .catalog-item h3 {
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -287,25 +280,45 @@ ul .address {
 }
 
 .catalog-item a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   color: #ffffff;
-  text-transform: uppercase; /*УТОЧНИ ПАРАМЕТРЫ ТЕКСТА и ЗАДАТЬ на КАРТОЧКи-разделы прозрачно-черный фон */
+  text-transform: uppercase; /*ЗАДАТЬ на КАРТОЧКи-разделы прозрачно-черный фон */
 
   background-color: #000000;
 }
 
+/*НОВЬЕ*/
+.catalog-item a:hover,
+.catalog-item a:focus {
+  color: #ffffff;
+  /*ЗАДАТЬ на КАРТОЧКи-разделы прозрачно-черный фон */
+  background-color: #000000;
+}
+
+/*НОВЬЕ*/
+.catalog-item a:active {
+  color: #ffffff;
+  /*ЗАДАТЬ на КАРТОЧКи-разделы прозрачно-черный фон */
+  background-color: #000000;
+}
+
+.main-slider {
+  background-color: #9d9792;
+}
+
 .main-slider h3 {
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
-  line-height: 30px;
+  line-height: 36px; /**/
   font-weight: bold;
   color: #ffffff;
 }
 
 .main-slider p {
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -313,9 +326,10 @@ ul .address {
 }
 
 .main-slider a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: auto;
+  font-weight: normal;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -326,20 +340,18 @@ ul .address {
 .main-slider a:focus {
   background-color: #ca2c37;
 }
-
+/*выделила фон в одном общем классе, а далее - почему один класс? картинки же разные.*/
 .main-slider a:active {
   background-color: #ba2732;
 }
 
 .main-slide-first {
-  background-color: #9d9792;
   background-image: url("img/slide-1.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .main-slide-second {
-  background-color: #9d9792;
   background-image: url("img/slide-2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -354,6 +366,10 @@ ul .address {
   background-color: #ffffff;
   } /*здесь уточнить отображение:цвет декоративных радиокнопок*/
 
+.section-header {
+  background-color: #f9f5f0;
+}
+
 .popular-goods .section-headline,
 .popular-producers .section-headline {
   font-family: "Cuprum Regular", "Arial", sans-serif;
@@ -364,18 +380,13 @@ ul .address {
 
   background-color: #f9f5f0;
 }
-/*сделала доп обертку, чтобы можно было бежевую полосу задать: */
-.popular-goods-wrapper,
-.popular-producers-wrapper {
-  background-color: #f9f5f0;
-}
 
-.popular-goods-wrapper a,
-.popular-producers-wrapper a,
-.company-contacts a  {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.section-header a,
+.company-contacts a {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -383,7 +394,7 @@ ul .address {
 }
 
 .card h3 {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -392,7 +403,7 @@ ul .address {
 }
 
 .card-old-price {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -403,7 +414,7 @@ ul .address {
 .card-price {
   width: 141px;
   height: 38px;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -413,30 +424,32 @@ ul .address {
   background-color: #ee3643;
 }
 
-.services-delivery {
+.services {
   background-color: #f4f8fa;
 }
 
-.services-delivery .section-headline,
-.company-contacts .section-headline {
+.services-headline,
+.company-headline {
     /*ПАРАМЕТРЫ ТЕКСТА на глаз, т.к. в ФШ это один слой без параметров текста!!!!!*/
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
   }
 
-.services-delivery p,
+.services p,
 .company-contacts p {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
+  font-weight: normal;
   color: #000000;
 }
 
 .services-slide-toggles {
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: auto;
   font-weight: bold;
@@ -446,7 +459,7 @@ ul .address {
 }
 
 .services-slide-toggles:hover {
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: auto;
   font-weight: bold;
@@ -457,7 +470,7 @@ ul .address {
 
 .services-slide-toggles:active,
 .services-slide-toggles:focus {
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: auto;
   font-weight: bold;
@@ -467,9 +480,10 @@ ul .address {
 }
 
 .services-slides a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -482,42 +496,51 @@ ul .address {
 }
 
 .company-name {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000;
   text-transform: capitalize;
 }
 
 .contacts .small-map {
-  background-color: transparent; /*почему здесь на карте появляется красная полоса у фона?*/
+  background-color: #ffffff; 
 }
 
 .contacts .buttons {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #ee3643;
 }
 
+/*ЗДЕСЬ НАЧИНАЕТСЯ РАЗМЕТКА СТРАНИЦЫ КАТАЛОГА*/
+.breadcrumbs { 
+  list-style: none;
+}
+
 .breadcrumbs a,
 .breadcrumbs li:last-child,
 .filters .filters-title,
-.sort .sort-title { /*ЗДЕСЬ НАЧИНАЕТСЯ РАЗМЕТКА СТРАНИЦЫ КАТАЛОГА*/
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+.sort .sort-title { 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
 }
 
 .container .title {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
 
@@ -534,12 +557,12 @@ ul .address {
   border-bottom: 1px solid #f7f3ec;
 }
 
-.filters fieldset:nth-child(3) {
+.filters fieldset:last-child {
   border-bottom: none;
 }
 
 .filters legend {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   color: #000000;
@@ -555,15 +578,15 @@ ul .address {
     background-color: #ffffff;
 }
 
-.filter-show li:first-child,
-.filter-show li:nth-child(3) {
+.price-show {
   background-color: #f7f3ec;
 }
 
 .filter-show {
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000;
 }
 
@@ -573,9 +596,10 @@ fieldset .filter-inner {
   }
 
 fieldset .filter-option {
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
 }
@@ -583,10 +607,10 @@ fieldset .filter-option {
 .filters button {
   width: 140px;
   height: 38px;
-
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
 
@@ -594,10 +618,11 @@ fieldset .filter-option {
   border: 1px solid #f7f3ec;
 }
 
-.sort .filter-sort-points a {
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+.filter-sort-points a {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000; /*ЗДЕСЬ ЕСТЬ ПРОЗРАЧНОСТЬ 30% - как задать?*/
   text-transform: uppercase;
   text-decoration: none;
@@ -616,12 +641,13 @@ fieldset .filter-option {
   border-bottom: none;
   }
 
-.buy-now-or-later li:first-child button {
+.button-buy {
   width: 135px;
   height: 38px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: auto; /*ИЛИ ЗДЕСЬ СДЕЛАТЬ КАК В КАТАЛОГЕ 18px&&&*/
+  font-weight: normal;  
   color: #ffffff;
   text-transform: uppercase;
   border: none;
@@ -629,21 +655,22 @@ fieldset .filter-option {
   background-color: #63a63e;
 }
 
-.buy-now-or-later li:first-child button:hover,
-.buy-now-or-later li:first-child button:focus {
+.button-buy:hover,
+.button-buy:focus {
   background-color: #5fbb2d;
 }
 
-.buy-now-or-later li:first-child button:active {
+.button-buy:active {
   background-color: #518534;
 }
 
-.buy-now-or-later li:last-child button {
+.button-later {
   width: 135px;
   height: 38px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: auto; /*ИЛИ ЗДЕСЬ СДЕЛАТЬ КАК В КАТАЛОГЕ 18px&&&*/
+  font-weight: normal;  
   color: #32425c;
   text-transform: uppercase;
   border: 3px solid #518534;
@@ -651,13 +678,14 @@ fieldset .filter-option {
   background-color: #ffffff;
   }
 
-.buy-now-or-later li:last-child button:hover,
-.buy-now-or-later li:last-child button:focus {
+.button-later:hover,
+.button-later:focus {
   border: 3px solid #32425c;
 }
 
-.buy-now-or-later li:first-child button:active {
-  border: 2px solid #32425c; /*ЗДЕСЬ ЕЩЕ ПРОЗРАЧНОСТЬ 30% - как сделать?*/
+.button-later:active {
+   color: rgba(50, 66, 92, 0.3);
+   border: 2px solid rgba(50, 66, 92, 0.3); 
 }
 
 .about {
@@ -666,31 +694,34 @@ fieldset .filter-option {
 
 .about .about-title {
 /*ПАРАМЕТРЫ ТЕКСТА на глаз, т.к. в ФШ это один слой без параметров текста!!!!!*/
-font-family: "Cuprum Regular", "Arial", sans-serif;
+font-family: "Cuprum", "Arial", sans-serif;
 font-size: 30px;
 line-height: 30px;
+font-weight: normal;    
 color: #000000;
 text-transform: uppercase;
 }
 
 .about p {
-font-family: "Cuprum Regular", "Arial", sans-serif;
+font-family: "Cuprum", "Arial", sans-serif;
 font-size: 14px;
 line-height: 22px;
+font-weight: normal;    
 color: #000000;
 }
 
 .pagination-list a {
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: auto;
+  font-weight: normal;  
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #e5e5e5;
 }
 
-.pagination-list .pagination-item-current a { /*ьак делают или иначе текущую страницу?*/
+.pagination-list .pagination-item-current a { /*так делают или иначе текущую страницу?*/
   background-color: #ee3643;
 }
 .pagination-list a:hover,
@@ -705,6 +736,10 @@ color: #000000;
 
 .main-footer {
   background-color: #32425c;
+}
+
+.footer-menu {
+  list-style: none;
 }
 
 .main-footer .logo {
@@ -722,11 +757,11 @@ color: #000000;
 }
 
 .main-footer .logo:active {
-  background-color: #ba2732;
-} /*ЗДЕСЬ ЕЩЕ ПРОЗРАЧНОСТЬ 30%. как ее отразить?*/
+  background-color: rgba(186, 39, 50, 0.3);
+} 
 
 .footer-contacts {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -736,7 +771,7 @@ color: #000000;
 }
 
 .footer-menu a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -747,7 +782,7 @@ color: #000000;
 
 .footer-menu a:hover,
 .footer-menu a:focus {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -759,17 +794,19 @@ color: #000000;
 }
 
 .footer-menu a:active {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
-  color: #f1f5f7;
+  color: #f1f5f7; /*НОВЬЕ: уточни, что здесь прозрачно - текст/фон?*/
+  /*ПОЧЕМУ не удирается черта при клике?*/
+  border-bottom: none;
 
-  background-color: #32425c;
-} /*здесь еще прозрачность 50% - как задать? srgb?*/
+  background-color: rgba(50, 66, 92, 0.5);
+} 
 
 .footer-menu-bottom a {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -780,7 +817,7 @@ color: #000000;
 
 .footer-menu-bottom a:hover,
 .footer-menu-bottom a:focus {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -792,17 +829,17 @@ color: #000000;
 }
 
 .footer-menu .footer-menu-bottom a:active {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
   color: #ffd180;
-
-  background-color: #32425c; /*ЗДЕСЬ ПРОЗРАЧНОСТЬ НУЖНА 50%!!!*/
+/*УТОЧНИ ПРОЗРАЧНОСТЬ у ЦВЕТА или ФОНА. ЕСЛИ ФОНА - почему в реальности не появляется?*/
+  background-color: rgba(50, 66, 92, 0.5); 
 }
 
 .bottom-footer {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -813,6 +850,10 @@ color: #000000;
 
 .bottom-footer a {
     color: #ffd180;
+}
+
+.footer-social {
+  list-style: none;
 }
 
 .feedback a:hover,
@@ -830,19 +871,18 @@ color: #000000;
     border-bottom: none;
 }
 
-.modal-write-us,
-.modal-bracket {
+.modal-write-us {
   background-color: #ffffff;
 }
 
 .modal-close {
-  color:  #ee3643;
+  color: #ee3643;
   background: transparent;
   block: none;
 }
 
 .write-us-form p {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
@@ -851,20 +891,19 @@ color: #000000;
 
 .write-us-form input,
 .write-us-form textarea {
-  font-family: "PT Sans Regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
   color: #a9a9a9;
 }
 
-.write-us-wrapper,
-.modal-bracket p:last-child {
+.write-us-wrapper {
   background-color: #f4f4f4;
 }
 
 .write-us-form button {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -874,18 +913,26 @@ color: #000000;
   background-color: #ee3643;
 }
 
-.modal-bracket p {
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+.modal-message {
+  background-color: #ffffff;
+}
+
+.modal-message p {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 18px;
   font-weight: normal;
   color: #000000;
 }
 
-.modal-bracket .go-to:first-child {
+.modal-message p:last-child {
+  background-color: #f4f4f4;
+}
+
+.modal-button:first-child {
   width: 220px;
   height: 38px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -895,10 +942,10 @@ color: #000000;
   background-color: #ee3643;
 }
 
-.modal-bracket .go-to:last-child {
+.modal-button:last-child {
   width: 220px;
   height: 38px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;

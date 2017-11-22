@@ -4,7 +4,7 @@
     <meta charset="utf-8">
  	<title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -17,7 +17,7 @@
            <label for="top-search" class="visually-hidden">Поиск</label>
          </form>
          <a href="#" class="add-form">Закладки:</a>
-         <a href="#" class="bascket">Корзина:</a>
+         <a href="#" class="add-form">Корзина:</a>
          <a href="#" class="order">Оформить заказ</a>
        </div>
        <div class="main-header">
@@ -28,9 +28,9 @@
            <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
          </ul>
          <ul class="user">
-           <li class="name-icon"><a href="#"><span class="visually-hidden">Моя страница</span></a></li>
+           <li class="icon"><a href="#"><span class="visually-hidden">Моя страница</span></a></li>
            <li class="name-user"><a href="#">Равшан Джамшутович</a></li>
-           <li class="exit-icon"><a href="#"><span class="visually-hidden">Выход</span></a></li>
+           <li class="icon"><a href="#"><span class="visually-hidden">Выход</span></a></li>
            <li class="user-link"><a href="#">Мои заказы</a></li>
            <li class="user-link"><a href="#">Личный кабинет</a></li>
          </ul>
@@ -38,7 +38,7 @@
            <ul class="site-navigation">
              <li><a href="index.html">Главная</a></li>
              <li><a href="company.html">Компания</a></li>
-             <li class="site-navigation-current><a href="catalog.html">Каталог</a></li>
+             <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
              <li><a href="news.html">Новости</a></li>
              <li><a href="specialoffers.html">Спецпредложения</a></li>
              <li><a href="delivery.html">Доставка</a></li>
@@ -67,11 +67,11 @@
              </div>
              <div class="filter-price output-area">
                <ul class="filter-show">
-                 <li><span>0</span>
+                 <li class="price-show"><span>0</span>
                  </li>
                  <li><span> - </span>
                  </li>
-                 <li><output name="priceoutput">30000</output>
+                 <li class="price-show"><output name="priceoutput">30000</output>
                  </li>
                </ul>
              </div>
@@ -137,9 +137,9 @@
            <ul class="cards-wrapper">
              <li class="card">
                <ul class="buy-now-or-later">
-	             <li><button class="button" type="button">Купить</button>
+	             <li><button class="button-buy" type="button">Купить</button>
 		         </li>
-		         <li><button class="button" type="button">В закладки</button>
+		         <li><button class="button-later" type="button">В закладки</button>
 		         </li>
 	           </ul>
 	           <a href="card-category.html">
@@ -151,9 +151,9 @@
              </li>
              <li class="card">
                <ul class="buy-now-or-later">
-	             <li><button class="button" type="button">Купить</button>
+	             <li><button class="button-buy" type="button">Купить</button>
 		         </li>
-		         <li><button class="button" type="button">В закладки</button>
+		         <li><button class="button-later" type="button">В закладки</button>
 		         </li>
 	           </ul>
                <a href="card-category.html">
@@ -165,9 +165,9 @@
              </li>
              <li class="card">
                <ul class="buy-now-or-later">
-	             <li><button class="button" type="button">Купить</button>
+	             <li><button class="button-buy" type="button">Купить</button>
 		         </li>
-		         <li><button class="button" type="button">В закладки</button>
+		         <li><button class="button-later" type="button">В закладки</button>
 		         </li>
 	           </ul>
                <a href="card-category.html">
@@ -178,9 +178,9 @@
              </li>
              <li class="card">
                <ul class="buy-now-or-later">
-	             <li><button class="button" type="button">Купить</button>
+	             <li><button class="button-buy" type="button">Купить</button>
 		         </li>
-		         <li><button class="button" type="button">В закладки</button>
+		         <li><button class="button-later" type="button">В закладки</button>
 		         </li>
 	           </ul>
                <a href="card-category.html">
@@ -192,9 +192,9 @@
              </li>
              <li class="card">
                <ul class="buy-now-or-later">
-	             <li><button class="button" type="button">Купить</button>
+	             <li><button class="button-buy" type="button">Купить</button>
 		         </li>
-		         <li><button class="button" type="button">В закладки</button>
+		         <li><button class="button-later" type="button">В закладки</button>
 		         </li>
 	           </ul>
                <a href="card-category.html">
@@ -206,9 +206,9 @@
              </li>
              <li class="card">
                <ul class="buy-now-or-later">
-	             <li><button class="button" type="button">Купить</button>
+	             <li><button class="button-buy" type="button">Купить</button>
 		         </li>
-		         <li><button class="button" type="button">В закладки</button>
+		         <li><button class="button-later" type="button">В закладки</button>
 		         </li>
 	           </ul>
                <a href="card-category.html">
@@ -277,13 +277,13 @@
      </div>
  	 </footer>
 
-     <section class="modal modal-bracket">
-	     <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+     <section class="modal modal-message">
+	   <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-	     <p>Товар добавлен в корзину!</p>
+       <p>Товар добавлен в корзину!</p>
        <p>
-	       <a class="go-to" href="#">Оформить заказ</a>
-         <a class="go-to" href="catalog.html">Продолжить покупки</a>
+       <a class="button-buy" href="#">Оформить заказ</a>
+       <a class="button-later" href="catalog.html">Продолжить покупки</a>
        </p>
      </section>
    </body>
