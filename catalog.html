@@ -16,8 +16,8 @@
            <input id="top-search" type="search" name="search" value="Поиск:">
            <label for="top-search" class="visually-hidden">Поиск</label>
          </form>
-         <a href="#" class="add-form">Закладки:</a>
-         <a href="#" class="add-form">Корзина:</a>
+         <a href="#" class="top-header-link">Закладки:</a>
+         <a href="#" class="top-header-link">Корзина:</a>
          <a href="#" class="order">Оформить заказ</a>
        </div>
        <div class="main-header">
@@ -28,17 +28,19 @@
            <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
          </ul>
          <ul class="user">
-           <li class="icon"><a href="#"><span class="visually-hidden">Моя страница</span></a></li>
-           <li class="name-user"><a href="#">Равшан Джамшутович</a></li>
-           <li class="icon"><a href="#"><span class="visually-hidden">Выход</span></a></li>
-           <li class="user-link"><a href="#">Мои заказы</a></li>
-           <li class="user-link"><a href="#">Личный кабинет</a></li>
+           <li>
+             <a href="#"><span class="visually-hidden">Моя страница</span></a>
+             <a class="name-user" href="#">Равшан Джамшутович</a>
+             <a href="#"><span class="visually-hidden">Выход</span></a>
+           </li>
+           <li><a class="user-link" href="#">Мои заказы</a></li>
+           <li><a class="user-link" href="#">Личный кабинет</a></li>
          </ul>
          <nav class="main-navigation">
            <ul class="site-navigation">
              <li><a href="index.html">Главная</a></li>
              <li><a href="company.html">Компания</a></li>
-             <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+             <li><a class="site-navigation-current">Каталог</a></li>
              <li><a href="news.html">Новости</a></li>
              <li><a href="specialoffers.html">Спецпредложения</a></li>
              <li><a href="delivery.html">Доставка</a></li>
@@ -52,7 +54,7 @@
          <li><a href="index.html">Главная</a></li>
          <li><a href="catalog.html">Каталог</a></li>
          <li><a href="catalog-instruments.html">Инструмент</a></li>
-         <li>Перфораторы</li>
+         <li><a>Перфораторы</a></li>
        </ul>
        <h2 class="title">Перфораторы</h2>
 
@@ -101,7 +103,7 @@
                </li>
              </ul>
            </fieldset>
-           <fieldset>
+           <fieldset class="no-border-fieldset">
              <legend>Питание</legend>
              <ul class="filter-inner">
                <li class="filter-option">
@@ -120,16 +122,16 @@
 
        <section class="sort">
          <h3 class="sort-title">Сортировка</h3>
- 		     <ul class="filter-sort-points">
-           <li class="sort-point"><a href="#">по цене</a>
+ 		     <ul class="sort-points">
+           <li><a class="sort-point" href="#">по цене</a>
            </li>
-           <li class="sort-point"><a href="#">по типу</a>
+           <li><a class="sort-point" href="#">по типу</a>
            </li>
-           <li class="sort-point"><a href="#">по функционалу</a>
+           <li><a class="sort-point" href="#">по функционалу</a>
            </li>
-           <li class="sort-point-increase"><a href="#"><span class="visually-hidden">По возрастанию</span></a>
+           <li><a class="sort-point-increase" href="#"><span class="visually-hidden">По возрастанию</span></a>
            </li>
-           <li class="sort-point-dicrease"><a href="#"><span class="visually-hidden">По убыванию</span></a>
+           <li><a class="sort-point-dicrease" href="#"><span class="visually-hidden">По убыванию</span></a>
            </li>
          </ul>
 
@@ -220,10 +222,10 @@
            </ul>
          </div>
          <ul class="pagination-list">
-           <li class="pagination-item pagination-item-current"><a>1</a></li>
-           <li class="pagination-item"><a href="">2</a></li>
-           <li class="pagination-item"><a href="">3</a></li>
-           <li class="pagination-item"><a href="">Следующая</a></li>
+           <li><a class="pagination-item pagination-item-current">1</a></li>
+           <li><a class="pagination-item" href="">2</a></li>
+           <li><a class="pagination-item" href="">3</a></li>
+           <li><a class="pagination-item" href="">Следующая</a></li>
         </ul>
        </section>
        <section class="about">
@@ -278,12 +280,12 @@
  	 </footer>
 
      <section class="modal modal-message">
-	   <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+	   <h2 class="visually-hidden">Товар добавлен в корзину</h2>
        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
        <p>Товар добавлен в корзину!</p>
-       <p>
-       <a class="button-buy" href="#">Оформить заказ</a>
-       <a class="button-later" href="catalog.html">Продолжить покупки</a>
+       <p class="modal-message-buttons">
+       <a class="modal-message-buttons buy-now" href="#">Оформить заказ</a>
+       <a class="modal-message-buttons buy-later" href="catalog.html">Продолжить покупки</a>
        </p>
      </section>
    </body>
