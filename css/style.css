@@ -412,6 +412,9 @@ a {
 .main-slider {
   flex-grow: 1;
   height: 266px;
+}
+
+.main-slide {
   background-color: #9d9792;
   background-position: center;
   background-repeat: no-repeat;
