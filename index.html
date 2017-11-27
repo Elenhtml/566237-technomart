@@ -6,6 +6,7 @@
       <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
+      <link href="css/outline.css" rel="stylesheet">
     </head>
     <body>
     <header class="header">
@@ -21,16 +22,19 @@
         <a href="#" class="order">Оформить заказ</a>
       </div>
       <div class="main-header">
-        <p class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта
-        </p>
-        <ul class="common-information">
-          <li class="telephone">+7 (812) 555-05-55</li>
-          <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
-        </ul>
-        <ul class="entrance-registration">
-          <li><a class="login-link" href="#">Войти</a></li>
-          <li><a class="login-link" href="#">Регистрация</a></li>
-        </ul>
+        <div class="about-shop-wrapper">
+          <p class="about-shop">Интернет-магазин строительных материалов<br>
+            и инструментов для ремонта
+          </p>
+          <ul class="common-information">
+            <li class="telephone">+7 (812) 555-05-55</li>
+            <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
+          </ul>
+          <ul class="entrance-registration">
+            <li><a class="login-link login-link-entrance" href="#">Войти</a></li>
+            <li><a class="login-link login-link-registration" href="#">Регистрация</a></li>
+          </ul>
+        </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li class="site-navigation-current"><a>Главная</a></li>
@@ -48,60 +52,62 @@
       <h1 class="visually-hidden">Техномарт. Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <section class="goods-sale-delivery">
         <h2 class="visually-hidden">Товары, скидки, доставка</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item catalog-item-orange">
-            <h3>Материалы</h3>
-              <a class="small-button" href="catalog-item-materials.html">на любой вкус</a>
-          </li>
-          <li class="catalog-item catalog-item-blue">
-            <h3>Инструменты</h3>
-               <a class="small-button" href="catalog-item-instruments.html">на все случаи</a>
-          </li>
-          <li class="catalog-item catalog-item-fucsia">
-            <h3>Техника</h3>
-              <a class="small-button" href="catalog-item-technics.html">для стройки</a>
-          </li>
-          <li class="catalog-item catalog-item-green">
-            <h3>Скидки 50%</h3>
-              <a class="small-button" href="catalog-item-sales.html">на 350 товаров</a>
-          </li>
-          <li class="catalog-item catalog-item-orange">
-            <h3>Доставка</h3>
-              <a class="small-button" href="catalog-item.html">бесплатно</a>
-          </li>
-        </ul>
- 	      <div class="main-slider">
-          <div class="main-slide perforators">
-		        <h3 class="catalog-item-title">Перфораторы</h3>
-            <p class="catalog-item-subtitle">Настоящие мужские игрушки</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="main-slide drills">
-            <h3 class="catalog-item-title">Дрели</h3>
-            <p class="catalog-item-subtitle">Соседям на радость!</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <button class="main-slider-button main-slider-button-next" type="button"><span class="visually-hidden">Вперед</span>
-		      </button>
-		      <button class="main-slider-button main-slider-button-back" type="button"><span class="visually-hidden">Назад</span>
-          </button>
-          <ul class="slides-switches">
-            <li class="slide-radio">
-                <button class="slide-btn"><span class="visually-hidden">Слайд 1</span></button>
+        <div class="goods-sale-delivery-wrapper">
+          <ul class="catalog-list">
+            <li class="catalog-item catalog-item-orange">
+              <h3>Материалы</h3>
+                <a class="small-button" href="catalog-item-materials.html">на любой вкус</a>
             </li>
-            <li class="slide-radio">
-              <button class="slide-btn"><span class="visually-hidden">Слайд 2</span></button>
+            <li class="catalog-item catalog-item-blue">
+              <h3>Инструменты</h3>
+                <a class="small-button" href="catalog-item-instruments.html">на все случаи</a>
+            </li>
+            <li class="catalog-item catalog-item-fucsia">
+              <h3>Техника</h3>
+                <a class="small-button" href="catalog-item-technics.html">для стройки</a>
+            </li>
+            <li class="catalog-item catalog-item-green">
+              <h3>Скидки 50%</h3>
+                <a class="small-button" href="catalog-item-sales.html">на 350 товаров</a>
+            </li>
+            <li class="catalog-item catalog-item-orange">
+              <h3>Доставка</h3>
+                <a class="small-button" href="catalog-item.html">бесплатно</a>
             </li>
           </ul>
+          <div class="main-slider">
+            <div class="main-slide perforators">
+		          <h3 class="catalog-item-title">Перфораторы</h3>
+              <p class="catalog-item-subtitle">Настоящие мужские игрушки</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </div>
+            <div class="main-slide drills">
+              <h3 class="catalog-item-title">Дрели</h3>
+              <p class="catalog-item-subtitle">Соседям на радость!</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </div>
+            <button class="main-slider-button main-slider-button-next" type="button"><span class="visually-hidden">Вперед</span>
+		        </button>
+		        <button class="main-slider-button main-slider-button-back" type="button"><span class="visually-hidden">Назад</span>
+            </button>
+            <ul class="slides-switches">
+              <li class="slide-radio">
+                <button class="slide-btn"><span class="visually-hidden">Слайд 1</span></button>
+              </li>
+              <li class="slide-radio">
+                <button class="slide-btn"><span class="visually-hidden">Слайд 2</span></button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
 	  <section class="popular-goods">
       <div class="section-header">
-	    <h2 class="section-headline">Популярные товары:</h2>
-          <a class="button" href="#">Все популярные товары</a>
+	      <h2 class="section-headline">Популярные товары:</h2>
+        <a class="button" href="#">Все популярные товары</a>
       </div>
-        <ul class="cards-wrapper">
+      <ul class="cards-wrapper">
           <li class="card">
             <a href="card-category.html">
               <img src="img/BOSCH-BFG9000.jpg" width="220" height="140" alt="Перфоратор BOSCH BFG 9000">
@@ -178,10 +184,13 @@
     </section>
 
 	  <section class="services">
+      <div class="sevices-wrapper">
         <h2 class="services-headline">Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <div class="slider">
+      </div>
+      <div class="slider">
           <ul class="services-slide-toggles">
             <li class="services-slide-toggle">Доставка</li>
             <li class="services-slide-toggle">Гарантия</li>
@@ -190,18 +199,22 @@
           <ul class="services-slides">
             <li class="services-slide delivery">
             <h2 class="services-slide-title">Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                 Ведь мы неплохо заработаем, поднимая его на ваш этаж! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
             </li>
             <li class="services-slide guarantee">
               <h2 class="services-slide-title">Гарантии</h2>
-              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              <p>Если купленный у нас товар поломается или заискрит,<br>
+                 а также в случае пожара, спровоцированного его возгаранием,<br>
+                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                 сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.
               </p>
             </li>
 			      <li class="services-slide credit">
               <h2 class="services-slide-title">Кредит</h2>
-              <p>Залезть в долговую яму стало проще!
+              <p>Залезть в долговую яму стало проще!<br>
                  Кредитные консультанты придут к вам на помощь.
               </p>
               <a class="button" href="№">Отправить заявку</a>
@@ -229,18 +242,24 @@
         <div class="contacts">
           <h2 class="company-headline">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:<p>
+            <div class="small-map-wrapper"
           <a class="small-map" href="#"><img src="img/map-small.png" alt="Карта"></a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
+          </div>
         </div>
       </section>
     </main>
 
 	<footer class="main-footer">
+    <div class="main-footer-container">
+      <div class="main-footer-logo-navigation-container">
+        <div class="main-footer-logo-container">
       <a class="logo" href="#">Техномарт</a>
       <p class="footer-contacts">
-        г.Санкт-Петербург, Б.Конюшенная, д.19/8
+        г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
         +7 (812) 555-05-55
       </p>
+    </div>
       <nav class="footer-navigation">
         <ul class="footer-menu">
           <li><a href="company.html">Компания</a></li>
@@ -256,9 +275,10 @@
           <li><a href="specialoffers.html">Спецпредложения</a></li>
         </ul>
       </nav>
+      </div>
       <div class="bottom-footer">
-	    <p class="copyright">
-          2010-2017 Компания "Техномарт"
+	      <p class="copyright">
+          2010-2017 Компания "Техномарт"<br>
           Все права защищены
         </p>
         <ul class="footer-social">
@@ -275,12 +295,14 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
       </div>
+    </div>
     </footer>
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <form class="write-us-form" action="https//echo.htmlacademy.ru" method="post">
+        <div class="modal-field-wrapper">
         <p class="small-field">
           <label for="user-name">Ваше имя</label>
           <input class="name" id="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
@@ -291,7 +313,8 @@
           <label for="user-letter">Текст письма</label>
           <textarea class="letter" id="user-letter" type="text" name="letter" rows="5">В свободной форме</textarea>
         </p>
-        <div class="write-us-wrapper"> /*добавила новую обертку, чтобы создать фон нужный*/
+      </div>
+        <div class="write-us-wrapper">
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
@@ -300,7 +323,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
       <p>
-        <img src="img/map-big.png" width="300" height="200" alt="Офис компании по адресу: ул.Большая Конюшенная 19/8, Санкт-Петербург">
+        <img src="img/map-big.png" width="940" height="447" alt="Офис компании по адресу: ул.Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
