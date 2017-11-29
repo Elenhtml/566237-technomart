@@ -6,40 +6,42 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
+    <!-- <link href="css/outline.css" rel="stylesheet"> --> 
   </head>
   <body>
     <header class="header">
-       <div class="top-header">
-         <a class="logo" href="index.html">Техномарт
-         </a>
-         <form action="" method="get">
-           <input id="top-search" type="search" name="search" value="Поиск:">
-           <label for="top-search" class="visually-hidden">Поиск</label>
-         </form>
-         <a href="#" class="top-header-link">Закладки:</a>
-         <a href="#" class="top-header-link">Корзина:</a>
-         <a href="#" class="order">Оформить заказ</a>
-       </div>
-       <div class="main-header">
-         <div class="about-shop-wrapper">
-           <p class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта
-           </p>
-           <ul class="common-information">
-             <li class="telephone">+7 (812) 555-05-55</li>
-             <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
-           </ul>
-           <div class="user-wrapper">
-             <p class="user">
-               <a href="#"><span class="visually-hidden">Моя страница</span></a>
-               <a class="name-user" href="#">Равшан Джамшутович</a>
-               <a href="#"><span class="visually-hidden">Выход</span></a>
-             </p>
-             <ul class="user-link-wrapper">
-               <li><a class="user-link orders" href="#">Мои заказы</a></li>
-               <li><a class="user-link personal" href="#">Личный кабинет</a></li>
-             </ul>
-           </div>
+      <div class="top-header">
+        <div class="inner-wrapper">  
+          <a class="logo" href="index.html">Техномарт
+          </a>
+          <form action="" method="get">
+            <input id="top-search" type="search" name="search" value="Поиск:">
+            <label for="top-search" class="visually-hidden">Поиск</label>
+          </form>
+          <a href="#" class="top-header-link">Закладки:</a>
+          <a href="#" class="top-header-link">Корзина:</a>
+          <a href="#" class="order">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="inner-wrapper">
+          <p class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта
+          </p>
+          <ul class="common-information">
+            <li class="telephone">+7 (812) 555-05-55</li>
+            <li class="address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</li>
+          </ul>
+          <div class="user-wrapper">
+            <p class="user">
+              <a href="#"><span class="visually-hidden">Моя страница</span></a>
+              <a class="name-user" href="#">Равшан Джамшутович</a>
+              <a href="#"><span class="visually-hidden">Выход</span></a>
+            </p>
+            <ul class="user-link-wrapper">
+              <li><a class="user-link orders" href="#">Мои заказы</a></li>
+              <li><a class="user-link personal" href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
          </div>
          <nav class="main-navigation">
            <ul class="site-navigation">
@@ -55,19 +57,16 @@
        </div>
      </header>
      <main class="container">
-       <div class="breadcrumbs-title-wrapper">
-         <ul class="breadcrumbs">
-           <li><a href="index.html">Главная</a></li>
-           <li><a href="catalog.html">Каталог</a></li>
-           <li><a href="catalog-instruments.html">Инструмент</a></li>
-           <li><a>Перфораторы</a></li>
-         </ul>
-         <h2 class="title">Перфораторы</h2>
-       </div>
-
+       <ul class="breadcrumbs">
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="catalog.html">Каталог</a></li>
+         <li><a href="catalog-instruments.html">Инструмент</a></li>
+         <li><a>Перфораторы</a></li>
+       </ul>
+       <h2 class="title">Перфораторы</h2>
+      
      <div class="filters-and-sort-wrapper">
        <section class="filters">
-         <div class="filters-wrapper">
          <h3 class="filters-title">Фильтр:</h3>
          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
            <fieldset>
@@ -133,14 +132,11 @@
            </fieldset>
            <button type="submit" class="filter-button button">Показать</button>
          </form>
-         </div>
        </section>
 
-     <div class="sort-instruments-pagination-wrapper">
        <section class="sort">
-         <div class="sort-wrapper">
          <h3 class="sort-title">Сортировка</h3>
- 		     <ul class="sort-points">
+ 		 <ul class="sort-points">
            <li><a class="sort-point" href="#">по цене</a>
            </li>
            <li><a class="sort-point" href="#">по типу</a>
@@ -152,10 +148,9 @@
            <li><a class="sort-point-dicrease" href="#"><span class="visually-hidden">По убыванию</span></a>
            </li>
          </ul>
-       </div>
-
+      
          <div class="instruments">
-           <ul class="cards-wrapper">
+           <ul class="cards-catalog-page">
              <li class="card">
                <ul class="buy-now-or-later">
 	             <li><button class="button-buy" type="button">Купить</button>
@@ -246,28 +241,27 @@
            <li><a class="pagination-item" href="">3</a></li>
            <li><a class="pagination-item-next" href="">Следующая</a></li>
         </ul>
-      </div>
-       </section>
-    </div>
+      </section>
+       </div> 
+    
        <section class="about">
-		     <h2 class="about-title">Пара слов о перфораторах</h2>
+		 <h2 class="about-title">Пара слов о перфораторах</h2>
          <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и дробения отверстий в кирпиче, бетоне и камне.<br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
              ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
          </p>
        </section>
      </main>
 
      <footer class="main-footer">
-       <div class="main-footer-container">
-         <div class="main-footer-logo-navigation-container">
-           <div class="main-footer-logo-container">
-         <a class="logo" href="index.html">Техномарт</a>
-         <p class="footer-contacts">
-           г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
-           +7 (812) 555-05-55
-         </p>
-       </div>
+       <div class="inner-wrapper">    
+         <div class="logo-container">
+           <a class="logo" href="index.html">Техномарт</a>
+           <p class="footer-contacts">
+             г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
+             +7 (812) 555-05-55
+           </p>
+         </div>
          <nav class="footer-navigation">
            <ul class="footer-menu">
              <li><a href="company.html">Компания</a></li>
@@ -285,29 +279,30 @@
          </nav>
          </div>
          <div class="bottom-footer">
-   	      <p class="copyright">
-             2010-2017 Компания "Техномарт"<br>
-             Все права защищены
-           </p>
-           <ul class="footer-social">
-             <li><a class="social-button" href="#">Вконтакте</a></li>
-             <li><a class="social-button" href="#">Фейсбук</a></li>
-             <li><a class="social-button" href="#">Инстаграм</a></li>
-           </ul>
-           <p class="feedback">
-             Обратная связь:
-             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-           </p>
-           <p class="footer-copyright">
-             Разработано:
-             <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-           </p>
+           <div class="inner-wrapper">   
+   	         <p class="copyright">
+               2010-2017 Компания "Техномарт"<br>
+               Все права защищены
+             </p>
+             <ul class="footer-social">
+               <li><a class="social-button" href="#">Вконтакте</a></li>
+               <li><a class="social-button" href="#">Фейсбук</a></li>
+               <li><a class="social-button" href="#">Инстаграм</a></li>
+             </ul>
+             <p class="feedback">
+               Обратная связь:
+               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+             </p>
+             <p class="footer-copyright">
+               Разработано:
+               <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+             </p>
+           </div>
          </div>
-       </div>
        </footer>
 
      <section class="modal modal-message">
-	     <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+	   <h2 class="visually-hidden">Товар добавлен в корзину</h2>
        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
        <div class="modal-message-wrapper">
          <p class="modal-message-text">Товар добавлен в корзину!</p>
