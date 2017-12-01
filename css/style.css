@@ -923,10 +923,6 @@ a {
 
 .slider {
   display: flex;
-  
-  flex-wrap: wrap;
-  width: 600px;
-  height: 279px;
   margin: 0;
   padding: 27px 0 52px 0;
 }
@@ -939,6 +935,7 @@ a {
 }
 
 .services-slide-toggles {
+  width: 240px;
   background-image: url("../img/Services-border.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -953,7 +950,6 @@ a {
 }
 
 .services-slide-toggle {
-  width: 240px;
   height: 61px;
   margin: 0;
   padding: 0;
