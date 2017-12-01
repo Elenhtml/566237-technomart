@@ -1,4 +1,4 @@
-body {
+body { /**/
   margin: 0;
   padding: 0;
 
@@ -175,7 +175,7 @@ a {
   color: #6a7180;
   opacity: 0.3;
   background-color: #293449;
-  background-image: /*url("../img/icon-basket.svg")*/;
+  background-image: url("../img/icon-basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -517,7 +517,10 @@ a {
 }
 
 .catalog-list {
-  flex-basis: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 940px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -573,8 +576,9 @@ a {
   background-position: 43px 37px;
 }
 
-.catalog-item-car {
+.catalog-item-orange-car {
     position: relative;
+  background-color: #ffbf47;
   background-image: url("../img/icon-delivery.png");
   background-repeat: no-repeat;
   background-position: 43px 37px;
@@ -636,6 +640,7 @@ a {
 }
 
 .drills {
+  display: none; /*только для 01.12.17*/
   position: relative;
   background-image: url("../img/slide-2.jpg");
 }
@@ -758,6 +763,7 @@ a {
 }
 
 .cards-index-page .card {
+  position: relative;
   width: 219px;
   height: 317px;
   margin-top: 20px;
@@ -974,7 +980,10 @@ a {
 
   background-color: #ffffff;
 }
-
+.guarantee, /*только на 01.12.17*/
+.credit {
+  display: none;
+}
 .services-slides {
   width: 710px;
   margin: 0;
@@ -1812,6 +1821,7 @@ a {
 }
 
 .modal-write-us {
+  position: relative;
   /*display: flex;
   justify-content: space-between;*/
   width: 620px;
@@ -1921,16 +1931,20 @@ a {
 }
 
 .modal-map {
-  display: none;
+  position: relative;
+  /*display: none;*/
   top: 50%;
   left: 50%;
   width: 940px;
   height: 447px;
+  margin-top: -223px;
+  margin-left: -470px;
   box-shadow: 16px #c8c6c6; /**/
   opacity: 50%;
 }
 
 .modal-message {
+    position: relative; /**/
   display: flex;
   flex-direction: column;
   width: 620px;
