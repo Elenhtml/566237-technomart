@@ -1171,7 +1171,7 @@ a {
 
 .services-slides {
   width: 710px;
-  height: 284px;
+  /*height: 284px;*/
   margin: 0;
   padding: 0;
   padding-left: 80px;
@@ -1190,11 +1190,11 @@ a {
 
 .delivery {
   display: none;
-  width: 620px;
-  height: 284px;/**/
   margin: 0;
   padding: 0;
-  padding-right: 345px;
+  padding-right: 345px;  
+  width: 620px;
+  
   box-sizing: border-box;
   background-image: url("../img/CarDelivery.png");
   background-repeat: no-repeat;
@@ -1203,11 +1203,11 @@ a {
 
 .guarantee {
   display: none;
-  width: 630px;
-  height: 277px;/**/
   margin: 0;
   padding: 0;
   padding-right: 250px;
+  width: 630px;
+  
   box-sizing: border-box;
   background-image: url("../img/guarantee-emblem.png");
   background-repeat: no-repeat;
@@ -1216,11 +1216,10 @@ a {
 
 .credit {
   /*display: none;*/
-  width: 630px;
-  height: 277px;/**/
   margin: 0;
   padding: 0;
   padding-right: 340px;
+  width: 630px;
   box-sizing: border-box;
   background-image: url("../img/credit-emblem.png");
   background-repeat: no-repeat;
