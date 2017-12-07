@@ -1096,17 +1096,6 @@ a {
   padding: 0;
 }
 
-.slider::after {
-  content: "";
-  position: absolute;
-  top: -48px;
-  left: 230px;
-  width: 10px;
-  height: 279px;
-  background-image: url("../img/border-services.png");
-  background-repeat: no-repeat;
-}
-
 .services-slide-toggles,
 .services-slides {
   margin: 0;
@@ -1120,6 +1109,17 @@ a {
   vertical-align: middle;
 }
 
+.services-slide-toggles::after {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: 230px;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/border-services.png");
+  background-repeat: no-repeat;
+} 
+    
 .services-slide-title {
   margin: 0;
   margin-bottom: 31px;
@@ -1190,8 +1190,13 @@ a {
   box-sizing: border-box;
 }
 
+.services-slide-toggle.active {
+  color: #32425c;  
+  background-color: #ffffff;  
+}
+
 .delivery {
-  display: none;
+  /*display: none;*/
   background-image: url("../img/car-delivery.png");
   background-repeat: no-repeat;
   background-position: 90% 97%;
@@ -1213,7 +1218,7 @@ a {
 }
 
 .credit {
-  /*display: none;*/
+  display: none;
   background-image: url("../img/credit-emblem.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
