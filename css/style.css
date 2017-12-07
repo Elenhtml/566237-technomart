@@ -2298,8 +2298,8 @@ a {
   border: 2px solid #dee3e4;
 }
 
-#user-name,
-#user-e-mail {
+.small-field-name input[type="text"],
+.small-field input[type="email"] {
   width: 220px;
   height: 38px;
 }
