@@ -1,4 +1,4 @@
-var button_buy = document.querySelector(".button-buy");
+var buttons_buy = document.querySelectorAll(".button-buy");
 var modal_message = document.querySelector(".modal-message");
 var modal_message_close = document.querySelector(".modal-message-close");
 
@@ -6,19 +6,21 @@ var button_write_us = document.querySelector(".button-write-us");
 var write_us = document.querySelector(".modal-write-us");
 var modal_write_us_close = write_us.querySelector(".modal-write-us-close");
 var form = write_us.querySelector("form");
-var name = write_us.querySelector("[name=name]");
+var username = write_us.querySelector("[name=name]");
 var e_mail = write_us.querySelector("[name=e-mail]");
-var letter = write_us.querySelector("[name=letter]");
-var storage_name = localStorage.getItem("name");
+var userletter = write_us.querySelector("[name=letter]");
+var storage_username = localStorage.getItem("username");
 var storage_e_mail = localStorage.getItem("e_mail");
 
 var button_map = document.querySelector(".small-map");
 var modal_map = document.querySelector(".modal-map");
 var no_map = document.querySelector(".modal-map-close");
 
-button_buy.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modal_message.classList.add("modal-message-show");
+buttons_buy.forEach(function(button) {
+  button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modal_message.classList.add("modal-message-show");
+  });
 });
 
 modal_message_close.addEventListener("click", function() {
@@ -34,16 +36,16 @@ window.addEventListener("keydown", function (evt) {
 });
 
 button_write_us.addEventListener("click", function (evt) {
-  evt.preventDefault();  
+  evt.preventDefault();
   write_us.classList.add("modal-write-us-show");
-    
-  if (storage_name && storage_e_mail) {
-    name.value = storage_name; 
+
+  if (storage_username && storage_e_mail) {
+    username.value = storage_username;
     e_mail.value = storage_e_mail;
-    letter.focus ();
-  } else {    
-    name.focus();
-  }   
+    userletter.focus();
+  } else {
+    username.focus();
+  }
 });
 
 modal_write_us_close.addEventListener("click", function(evt) {
@@ -53,11 +55,11 @@ modal_write_us_close.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !e_mail.value || letter.value) {
+  if (!username.value || !e_mail.value || !userletter.value) {
     evt.preventDefault();
     write_us.classList.add("modal-error");
   } else {
-    localStorage.setItem("name", name.value);
+    localStorage.setItem("username", username.value);
     localStorage.setItem("e_mail", e_mail.value);
   }
 });
@@ -72,15 +74,15 @@ window.addEventListener("keydown", function (evt) {
 });
 
 button_map.addEventListener("click", function (evt) {
-  evt.preventDefault();  
+  evt.preventDefault();
   modal_map.classList.add("modal-map-show");
 });
-                            
+
 no_map.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal_map.classList.remove("modal-map-show");
 });
-   
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (modal_map.classList.contains("modal-map-show")) {
@@ -88,5 +90,3 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
