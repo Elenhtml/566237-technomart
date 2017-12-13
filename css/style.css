@@ -1356,7 +1356,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .delivery {
-/*  display: none;*/
+  /*display: none;*/
   background-image: url("../img/car-delivery.png");
   background-repeat: no-repeat;
   background-position: 100% 97%;
@@ -1982,7 +1982,7 @@ input:focus:-ms-input-placeholder {
       flex-wrap: wrap;
   padding: 10px 16px 10px 20px;
   width: 700px;
-  font-size: 0;    /*борьба с пробелами в коде*/
+  font-size: 0;    
   background-color: #f7f3ec;
   border-radius: 3px;
   -webkit-box-sizing: border-box;
@@ -2348,7 +2348,7 @@ input:focus:-ms-input-placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 2px 0 0 36px;;
+  padding: 2px 0 0 36px;
   width: 524px;
   min-height: 57px;
   list-style: none;
